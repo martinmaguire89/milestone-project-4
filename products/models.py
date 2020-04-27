@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+""" This will display the products on thr poduct page and datebase"""
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
