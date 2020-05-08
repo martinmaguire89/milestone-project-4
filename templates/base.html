@@ -42,7 +42,7 @@
     
     
 <!--   Show this only lg screens and up   -->
-    <a class="navbar-brand d-none d-lg-block" href="#">One For The Road<i class="fas fa-road"></i></a>
+    <a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">One For The Road<i class="fas fa-road"></i></a>
     
     
     <!--   if statement used ot only show certain pages if the user is logged in   -->
@@ -52,6 +52,7 @@
                         <li><a href="{% url 'profile' %}">Profile</a></li>
                         <li><a href="{% url 'logout' %}">Log Out</a></li>
                     {%  else %}
+                        <li><a href="{% url 'products' %}">Beers</a></li>
                         <li><a href="{% url 'register' %}">Register</a></li>
                         <li><a href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
@@ -77,10 +78,10 @@
             </div>
         </div>
     {% endif %}
-    <div class="container">
+    
         
         {% block content %} {% endblock %}
-    </div>
+    
     <footer>
         <div class="container">
             <p></p>
