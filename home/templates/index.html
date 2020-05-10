@@ -1,24 +1,14 @@
 {% extends 'base.html' %} {% load staticfiles %}
-
 {% block content %}
-
-<div class="container-fluid masthead">
-    <div class="container-fluid callout-container">
-            <div class="opaque-overlay">&nbsp;</div>
-            <div class="row">
-                <div class="col-12">
-                    <Section class="callout jumbotron text-center">
-                        <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
-                        <hr class="block-divider block-divider--orange">
-                        <p class="lead">Sign up today to start recieving the world's best Whiskey every month.
-                            <s class="d-none d-sm-inline">£19.99</s>
-                            <span class="d-inline d=sm-none"><br></span>
-                            <strong><mark>The first one is free!</mark></strong></p>
-                        <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
-                        <p class="text-muted"><small>You must be over 18. Please, drink responsibly.</small></p>
-                    </Section>
-                </div>
-            </div>
+ <header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light"></h1>
+        <p class="lead"></p>
+      </div>
     </div>
-</div>
+  </div>
+</header>
+<!-- Full Page Image Header with Vertically Centered Content -->
 {% endblock %}
