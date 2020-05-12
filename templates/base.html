@@ -13,6 +13,7 @@
     <!-- Custom Stylesheet loaded from static folder -->
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <!-- block head js needs as it contains javascript that is need for stripe to work-->
     {% block head_js %}
     {% endblock head_js %}
@@ -42,8 +43,7 @@
 
 
 		<!--   Show this only lg screens and up   -->
-		<a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">One For The
-			Road<i class="fas fa-road"></i></a>
+		<a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}"><h1>One For The Road</h1></a>
 
 
 		<!--   if statement used ot only show certain pages if the user is logged in   -->
