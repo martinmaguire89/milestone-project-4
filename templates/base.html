@@ -21,74 +21,124 @@
  
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-<!--  Show this only on mobile to medium screens  -->
-  <a class="navbar-brand d-lg-none" href="#">One For The Road<i class="fas fa-road"></i></a>
+	<!--  Show this only on mobile to medium screens  -->
+	<a class="navbar-brand d-lg-none" href="#">One For The Road<i class="fas fa-road"></i></a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-<!--  Use flexbox utility classes to change how the child elements are justified  -->
-  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+	<!--  Use flexbox utility classes to change how the child elements are justified  -->
+	<div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
-    <ul class="navbar-nav">
-      <div class="display">
-            <form action="{% url 'search' %}" method="get">
-                <input type="text" name="q">
-                <button type="search">Search</button>
-            </form>
-        </div>
-    </ul>
-    
-    
-<!--   Show this only lg screens and up   -->
-    <a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">One For The Road<i class="fas fa-road"></i></a>
-    
-    
-    <!--   if statement used ot only show certain pages if the user is logged in   -->
-        <ul class="navbar-nav">
-          <ul class="nav navbar-nav navbar-right">
-                    {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}">Profile</a></li>
-                        <li><a href="{% url 'logout' %}">Log Out</a></li>
-                    {%  else %}
-                        <li><a href="{% url 'products' %}">Beers</a></li>
-                        <li><a href="{% url 'register' %}">Register</a></li>
-                        <li><a href="{% url 'login' %}">Log In</a></li>
-                    {% endif %}
-                    <li>
-                        <a href="{% url 'view_cart' %}">
-                            <i class="fas fa-shopping-cart"></i>Cart
-                            {% if product_count > 0 %}
-                            <label class="badge badge-warning">{{ product_count }}</label>
-                            {% endif %}
-                        </a>
-                    </li>
-                </ul>
+		<ul class="navbar-nav">
+			<div class="display">
+				<form action="{% url 'search' %}" method="get">
+					<input type="text" name="q">
+					<button type="search">Search</button>
+				</form>
+			</div>
+		</ul>
 
-        </ul>
-  </div>
+
+		<!--   Show this only lg screens and up   -->
+		<a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">One For The
+			Road<i class="fas fa-road"></i></a>
+
+
+		<!--   if statement used ot only show certain pages if the user is logged in   -->
+		<ul class="navbar-nav">
+			<ul class="nav navbar-nav navbar-right">
+				{% if user.is_authenticated %}
+				<li><a href="{% url 'profile' %}">Profile</a></li>
+				<li><a href="{% url 'logout' %}">Log Out</a></li>
+				{%  else %}
+				<li><a href="{% url 'products' %}">Beers</a></li>
+				<li><a href="{% url 'register' %}">Register</a></li>
+				<li><a href="{% url 'login' %}">Log In</a></li>
+				{% endif %}
+				<li>
+					<a href="{% url 'view_cart' %}">
+						<i class="fas fa-shopping-cart"></i>Cart
+						{% if product_count > 0 %}
+						<label class="badge badge-warning">{{ product_count }}</label>
+						{% endif %}
+					</a>
+				</li>
+			</ul>
+
+		</ul>
+	</div>
 </nav>
 
-    {% if messages %}
-        <div class="alert alert-success">
-            <div class="messages">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            </div>
-        </div>
-    {% endif %}
-    
-        
-        {% block content %} {% endblock %}
-    
-    <footer>
-        <div class="container">
-            <p></p>
-        </div>
-    </footer>
+{% if messages %}
+<div class="alert alert-success">
+	<div class="messages">
+		{% for message in messages %}
+		{{ message }}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
 
+
+{% block content %} {% endblock %}
+
+<!-- Footer -->
+<footer class="footer">
+
+	<!-- Footer Elements -->
+	<div class="container">
+
+		<!-- Grid row-->
+		<div class="row">
+
+			<!-- Grid column -->
+			<div class="col-md-12">
+				<div class="flex-center">
+
+					<!-- Facebook -->
+					<a class="fb-ic">
+						<i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+					</a>
+					<!-- Twitter -->
+					<a class="tw-ic">
+						<i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+					</a>
+					<!-- Google +-->
+					<a class="gplus-ic">
+						<i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+					</a>
+					<!--Linkedin -->
+					<a class="li-ic">
+						<i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+					</a>
+					<!--Instagram-->
+					<a class="ins-ic">
+						<i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+					</a>
+					<!--Pinterest-->
+					<a class="pin-ic">
+						<i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+					</a>
+				</div>
+			</div>
+			<!-- Grid column -->
+
+		</div>
+		<!-- Grid row-->
+
+	</div>
+	<!-- Footer Elements -->
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center">© 2020 Copyright:
+		<p>Martin Maguire</p>
+	</div>
+	<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 <!-- jQuery & popper.js for interactive elements from Bootstrap -->
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
