@@ -6,6 +6,8 @@ body {
     line-height: 1.5;
     color: #305151;
     text-align: center;
+    background-color: #f8f9fa;
+
 }
 
 footer {
@@ -13,7 +15,8 @@ footer {
     padding-top: 40px;
     padding-bottom: 20px;
     border-top: 1px solid #ededed;
-    color: #A9A9A9;
+    color: #305151;
+    
 }
 
 .icon-bar {
@@ -82,14 +85,6 @@ caption p {
     padding-right: 0;
 }
 
-.site-wide-alert {
-    border-radius: 0;
-    margin-bottom: 0;
-    padding: 5px 15px;
-    background-color: #eec802;
-    border-color: #eec802;
-
-}
 .masthead {
   height: 100vh;
   min-height: 500px;
@@ -235,5 +230,18 @@ caption p {
 .h1, h1 {
     font-size: 2.5rem;
     font-family: 'Josefin Sans', sans-serif;
-    color: darkslategray;
+    color: #305151;
 }
+
+a {
+    color: #305151;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+a:hover {
+    color: #8D9E9E;
+    text-decoration: underline;
+}
+
