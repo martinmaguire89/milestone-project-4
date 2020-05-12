@@ -1,6 +1,11 @@
 body {
     font-family: Arial;
     padding-top: 56px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
 }
 
 footer {
@@ -212,4 +217,17 @@ caption p {
     font-weight: bold;
     margin-top: 10px;
     color: #f05f40;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: transparent;
 }
