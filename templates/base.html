@@ -53,7 +53,15 @@
 				<li><a href="{% url 'products' %}">Beers</a></li>
 				<li><a href="{% url 'logout' %}">Log Out</a></li>
 				{%  else %}
-				<li><a href="{% url 'products' %}">Beers</a></li>
+				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Beers
+            </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="{% url 'products' %}">Beers</a>
+						<a class="dropdown-item" href="#">Mixed cases</a>
+						<a class="dropdown-item" href="#">Apparel</a>
+					</div>
+				</li>
 				<li><a href="{% url 'register' %}">Register</a></li>
 				<li><a href="{% url 'login' %}">Log In</a></li>
 				{% endif %}

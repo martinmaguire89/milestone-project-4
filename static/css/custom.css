@@ -263,3 +263,16 @@ a:hover {
     text-decoration: underline;
 }
 
+#navbardropdown {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+    color: #305151;
+}
+
+#navbardropdown:hover{
+    color: #8D9E9E;
+    text-decoration: underline
+}
+
