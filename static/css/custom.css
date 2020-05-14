@@ -9,7 +9,7 @@ body {
     background-color: #f8f9fa;
 
 }
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+#container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -195,7 +195,7 @@ caption p {
     border-color: #8D9E9E;
 }
 
-}
+
 .btn-success:hover {
 
     color: #fff;
