@@ -16,7 +16,6 @@ body {
 }
 
 footer {
-    margin-top: 40px;
     padding-top: 40px;
     padding-bottom: 20px;
     border-top: 1px solid #ededed;
@@ -276,4 +275,7 @@ a:hover {
     text-decoration: underline
 }
 
-
+.subscribe {
+    background-color: #f5f3f3;
+    height: 400px;
+}
