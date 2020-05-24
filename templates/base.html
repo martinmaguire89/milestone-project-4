@@ -52,6 +52,7 @@
 				{% if user.is_authenticated %}
 				<li><a href="{% url 'products' %}">Beers</a></li>
 				<li><a href="{% url 'logout' %}">Log Out</a></li>
+                <li><a href="{% url 'get_posts' %}">Blog</a></li>
 				{%  else %}
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Beers
