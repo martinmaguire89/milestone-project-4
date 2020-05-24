@@ -32,7 +32,7 @@ def post_detail(request, pk):
 
 def create_or_edit_post(request, pk=None):
     """
-     view that allows us to create
+    view that allows us to create
     or edit a post depending if the Post ID
     is null
     """
