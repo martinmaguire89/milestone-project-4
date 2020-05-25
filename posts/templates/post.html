@@ -1,32 +1,41 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block content %} 
 
 {% for post in posts %}
-<div class="row">
-  <div class="col-md-2 col-sm-3 text-center">
-    <a class="story-img" href="#">
-      <img src="/media/img/profile.jpg" class="img-circle" />
-    </a>
-    <p><span class="boldtext">Author:</span> Niel</p>
-  </div>
-  <div class="col-md-10 col-sm-9">
-    <h3>{{ post.title }}</h3>
-    <div class="row">
-      <div class="col-xs-9">
-        <p>{{ post.content|truncatewords:30 }}</p>
-        <p>
-          <a href="{% url 'post_detail' post.id %}" class="btn btn-default"
-            >Read more</a
-          >
-        </p>
-        <p>
-          <span class="boldtext">Published on:</span> {{ post.published_date }}
-        </p>
-        <p><span class="boldtext">Views:</span> {{post.views}}</p>
-        <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
-      </div>
-    </div>
-  </div>
-  <hr />
+<div class="container">
+	<!-- Grid row -->
+	<div class="row">
+
+		<!-- Grid column -->
+		<div class="col-lg-5 col-xl-4">
+
+			<!-- Featured image -->
+			<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+				<img class="img-fluid" src="{{ post.image.url }}" alt="image">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+			</div>
+
+		</div>
+		<!-- Grid column -->
+
+		<!-- Grid column -->
+		<div class="col-lg-7 col-xl-8">
+
+			<!-- Post title -->
+			<h3 class="font-weight-bold mb-3"><strong>{{ post.title }}</strong></h3>
+			<!-- Excerpt -->
+			<p class="dark-grey-text">{{ post.content|truncatewords:30 }}</p>
+			<!-- Post data -->
+			<p>by <a class="font-weight-bold">{{ post.author }}</a>, {{ post.published_date }}</p>
+			<p><span class="boldtext">Views:</span> {{post.views}}</p>
+			<!-- Read more button -->
+			<a a href="{% url 'post_detail' post.id %}" class="btn btn-default">Read more</a>
+
+		</div>
+		<!-- Grid column -->
+		<hr>
+	</div>
 </div>
 {% endfor %} 
 {% endblock %}
