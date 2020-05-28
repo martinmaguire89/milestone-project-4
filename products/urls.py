@@ -3,5 +3,5 @@ from .views import all_products, cases
 
 urlpatterns = [
     url(r'^$', all_products, name='products'),
-    url(r'^$', cases, name='cases'),
+    url(r'^cases/$', cases, name='cases'),
 ]
