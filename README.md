@@ -79,23 +79,31 @@ The more info page provides the user with a small biography that another user ha
 * When a new fighter was uploaded due to different sizes of photos used on small screens it sometimes pushed the fighter image outside of the card section. To rectify this I set the height at 100% and the width to 360px so that they stayed within the card on all screen sizes. 
 
 ## Deployment
+
+This full stack application was developed using github and version controlled via local (git) pushes.
+Any secret environment variables were stored in an env.py file which was added to a .gitignore file keeping those files out of play from the public repo.
+When deploying to Heroku the variables detailed in the env.py file was added to Heroku Settings tab for this application under the Config Vars section allowing the deployed site to utilise these secret variables.
+
 Heroku
 * This site is deployed on Heroku
 My project has also been deployed via the master branch and hosted on Heroku. Heroku is a cloud platform that allows for building, developing and operating applications on the cloud Heroku in a range of programming languages. Python was the mainly used for this project.
 
 The following process was undertaken to succesfully deploy the project on the Heroku:
 
-New app creted on Heroku
-* After creating my env.py file (along with the .gitignore file), I added the MONGO URI..
-* I installed Heroku via my command line interface, using install npm install heroku on my git hub terminal.
-Afterwards type heroku login, which would redirect me to another tab where I would sign in to heroku as proceed once more in the terminal.
-The next step was to initialise a git repo and add my Heroku remote repo command.
-However, as per the requirements, before I can push my code to the Heroku app, I installed:
+As per the requirements, before I can push my code to the Heroku app, I installed:
+* we need to Pip3 install dj_database_url and pip3 install psycopg2.
 * A requirements.txt file is needed to run the installed dependencies, so to create and commit this file, the following command was used: $ sudo pip3 freeze --local > requirements.txt (and also used to update the file if any libraries were added).
 * A Procfile is needed to direct the Heroku app to the file that it needs to run. So I used the command $ echo web: python > Procfile in the terminal to install the file. 
 * This was followed by a simple command in the terminal to run the web process: $ heroku ps:scale web=1.
-* Finally, to deploy I would use the $ git push heroku master to deploy my code on the Heroku app.
-After any change on my code, I would push my code to the Heroku app to check if it was functioning. There were some slight issues with the MONGO URI and SECRET KEY but it was resolved quickly.
+* we need to migrate all excisting migrations to our new postgres databse and create a new superuser.
+*	Create an app on Heroku with a unique name for your app
+*	In resources add a Postgres database – Hobby Dev and copy the URL for the new database to Config Vars
+*	In settings tab add any secret environment variables to the Config Vars of those the secret values held in the env.py for Live Deployment.
+•	Creating an app on Heroku & deploying it from same.
+•	Adding any secret environment variables to the Config Vars of Heroku App Settings tab and assigning those the secret values held in the env.py for Live Deployment.
+•	
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
 
 If you wish to clone this project from GitHub:
 *	Click on this [link](https://github.com/martinmaguire89/milestone-project-4) to the GitHub repository.
