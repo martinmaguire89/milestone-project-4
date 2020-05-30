@@ -37,8 +37,8 @@ Using the large picture attract the fan straight away with 5 of the most recogni
 *	[Gitpod](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) - Used for a development and testing area.
 *	[Bootstrap](https://www.bootstrapcdn.com/) - Bootstrap framework to create responsive design.
 *	[fontawesome](https://fontawesome.com/) - for social media icons.
-* Flask
-* [MongoDB](https://www.mongodb.com/) backend database used to store the information on the fighters
+* [Django](https://www.djangoproject.com/)- a Python-based free and open-source web framework that follows the model-template-view architectural pattern.
+* [PostgresSQL](https://www.postgresql.org/)- backend database used to store the information on the products
 * [Python](https://www.python.org/)- 
 * [Heroku](https://dashboard.heroku.com/auth/heroku/callback?code=61fc81a2-ba86-42ec-ac96-a904a0153b77)- A cloud platform as a service enabling deployment for this CRUD application.
 
