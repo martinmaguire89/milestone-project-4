@@ -1,5 +1,5 @@
 # Milestone-project-4
-#One For The Road
+# One For The Road
 
 My 4th milestone project is a full-stack site website based around business logic used to control a centrally-owned dataset. One for the road is a e-commerce webpage selling craft beer from all around the country. The reason for this idea was due to me looking for a place to buy a variety of different craft beers from around Ireland. This website allows users to look at many different beers from all the different counties and have them deliver straight to there door. There is also the added bonus for customers once they have registered, they can enjoy a regular updated blog of new crafts beers around the island and best places to visit for the very best craft beer.  Valuable information for the serious craft beer enthusiast. 
 
