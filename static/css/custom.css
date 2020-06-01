@@ -311,3 +311,8 @@ button, optgroup, select, textarea {
 .categories{
   background-color: #f5f3f3;
 }
+
+.card-img-top{
+    max-height: 293px;
+    width: 100%;
+}
