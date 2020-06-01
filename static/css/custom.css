@@ -307,3 +307,7 @@ button, optgroup, select, textarea {
     margin: 7px;
     margin-top: 18px;
 }
+
+.categories{
+  background-color: #f5f3f3;
+}
