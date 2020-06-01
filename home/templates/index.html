@@ -1,134 +1,152 @@
-{% extends 'base.html' %} {% load staticfiles %}
-{% block content %}
+{% extends 'base.html' %} {% load staticfiles %} {% block content %}
 <!-- Full Page Image Header with Vertically Centered Content -->
 
 <div class="container-fluid masthead h-100" id="container-fluid">
-	<div class="row h-100 align-items-center">
-		<div class="col-12 text-center">
-			<h1 class="font-weight-light"></h1>
-			<p class="lead"></p>
-		</div>
-	</div>
-	<div class="py-5">
-
-		<!-- Content -->
-		<h2 class="card-title h2 my-4 py-2">Jumbotron with image overlay</h2>
-		<p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-			obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis
-			perferendis vitae cumque et quo impedit.</p>
-		<a class="btn peach-gradient"><i class="fas fa-clone left"></i> View project</a>
-
-	</div>
+  <div class="row h-100 align-items-center">
+    <div class="col-12 text-center">
+      <h1 class="font-weight-light"></h1>
+      <p class="lead"></p>
+    </div>
+  </div>
+   <!-- jumbotron -->
+  <div class="jumbotron">
+    <h2 class="card-title h2 my-4 py-2">
+      Your one stop shop for all the best Irish craft beers
+    </h2>
+    <p class="mb-4 pb-2 px-md-5 mx-md-5">
+      Register to read our blogs on the best places to buy craft beer and where
+      to enjoy them.
+    </p>
+    <a class="btn-jumbo" href="{% url 'register' %}"> Register Now</a>
+  </div>
 </div>
+<!-- jumbotron -->
+
 <!-- Full Page Image Header with Vertically Centered Content -->
 
+
 <div class="container categories">
-	<!-- Card deck -->
-	<div class="card-deck">
+  <!-- Card deck -->
+  <div class="card-deck">
+    <!-- Card -->
+    <div class="card mb-4">
+      <!--Card image-->
+      <div class="view overlay">
+        <img
+          class="rounded-circle mr-3"
+          width="100%"
+          height="300"
+          src="https://produits.bienmanger.com/34719-0w470h470_Hara_Irish_Beers_Discovery_Offer.jpg"
+          alt="Card image cap"
+        />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
 
-		<!-- Card -->
-		<div class="card mb-4">
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Beers</h4>
+        <!--Text-->
+        <p class="card-text">
+          click here to see some of the best craft beers ireland has to offer
+        </p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn-primary">Beers</button>
+      </div>
+    </div>
+    <!-- Card -->
 
-			<!--Card image-->
-			<div class="view overlay">
-				<img class="rounded-circle mr-3" width="100%" height="300" src="https://produits.bienmanger.com/34719-0w470h470_Hara_Irish_Beers_Discovery_Offer.jpg" alt="Card image cap">
-				<a href="#!">
-					<div class="mask rgba-white-slight"></div>
-				</a>
-			</div>
+    <!-- Card -->
+    <div class="card mb-4">
+      <!--Card image-->
+      <div class="view overlay">
+        <img
+          class="rounded-circle mr-3"
+          width="100%"
+          height="300"
+          src="https://produits.bienmanger.com/34719-0w470h470_Hara_Irish_Beers_Discovery_Offer.jpg"
+          alt="Card image cap"
+        />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
 
-			<!--Card content-->
-			<div class="card-body">
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Beers</h4>
+        <!--Text-->
+        <p class="card-text">
+          click here to see some of the best craft beers ireland has to offer
+        </p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn-primary">Beers</button>
+      </div>
+    </div>
+    <!-- Card -->
 
-				<!--Title-->
-				<h4 class="card-title">Beers</h4>
-				<!--Text-->
-				<p class="card-text">click here to see some of the best craft beers ireland has to offer</p>
-				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-				<button type="button" class="btn btn-light-blue btn-md">Beers</button>
+    <!-- Card -->
+    <div class="card mb-4">
+      <!--Card image-->
+      <div class="view overlay">
+        <img
+          class="rounded-circle mr-3"
+          width="100%"
+          height="300"
+          src="https://produits.bienmanger.com/34719-0w470h470_Hara_Irish_Beers_Discovery_Offer.jpg"
+          alt="Card image cap"
+        />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
 
-			</div>
-
-		</div>
-		<!-- Card -->
-
-		<!-- Card -->
-		<div class="card mb-4">
-
-			<!--Card image-->
-			<div class="view overlay">
-				<img class="rounded-circle mr-3" width="100%" height="300" src="https://produits.bienmanger.com/34719-0w470h470_Hara_Irish_Beers_Discovery_Offer.jpg" alt="Card image cap">
-				<a href="#!">
-					<div class="mask rgba-white-slight"></div>
-				</a>
-			</div>
-
-			<!--Card content-->
-			<div class="card-body">
-
-				<!--Title-->
-				<h4 class="card-title">Beers</h4>
-				<!--Text-->
-				<p class="card-text">click here to see some of the best craft beers ireland has to offer</p>
-				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-				<button type="button" class="btn btn-light-blue btn-md">Beers</button>
-
-			</div>
-
-		</div>
-		<!-- Card -->
-
-		<!-- Card -->
-		<div class="card mb-4">
-
-			<!--Card image-->
-			<div class="view overlay">
-				<img class="rounded-circle mr-3" width="100%" height="300" src="https://produits.bienmanger.com/34719-0w470h470_Hara_Irish_Beers_Discovery_Offer.jpg" alt="Card image cap">
-				<a href="#!">
-					<div class="mask rgba-white-slight"></div>
-				</a>
-			</div>
-
-			<!--Card content-->
-			<div class="card-body">
-
-				<!--Title-->
-				<h4 class="card-title">Beers</h4>
-				<!--Text-->
-				<p class="card-text">click here to see some of the best craft beers ireland has to offer</p>
-				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-				<button type="button" class="btn btn-light-blue btn-md">Beers</button>
-
-			</div>
-
-		</div>
-		<!-- Card -->
-
-	</div>
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Beers</h4>
+        <!--Text-->
+        <p class="card-text">
+          click here to see some of the best craft beers ireland has to offer
+        </p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn-primary">Beers</button>
+      </div>
+    </div>
+    <!-- Card -->
+  </div>
 </div>
 <!-- Card deck -->
 
 <!-- Section: Products v.3 -->
 <section class="text-center my-5">
-
   <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-5">Our new releases</h2>
+  <h2 class="h1-responsive font-weight-bold text-center my-5">
+    Our new releases
+  </h2>
   <!-- Section description -->
-  <p class="grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas
-    nostrum quisquam eum porro a pariatur veniam.</p>
+  <p class="grey-text text-center w-responsive mx-auto mb-5">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+    numquam iure provident voluptate esse quasi, veritatis totam voluptas
+    nostrum quisquam eum porro a pariatur veniam.
+  </p>
 
   <!-- Grid row -->
   <div class="row">
-
     <!-- Grid column -->
     <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
       <!-- Card -->
       <div class="card align-items-center">
         <!-- Card image -->
         <div class="view overlay">
-          <img src="https://d25cmwjnw6afa4.cloudfront.net/media/catalogue/product/large/Boyne_Pale_Ale.jpg" class="card-img-top"
-            alt="">
+          <img
+            src="https://d25cmwjnw6afa4.cloudfront.net/media/catalogue/product/large/Boyne_Pale_Ale.jpg"
+            class="card-img-top"
+            alt=""
+          />
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -142,7 +160,8 @@
           </a>
           <h5>
             <strong>
-              <a href="" class="dark-grey-text">Beer
+              <a href="" class="dark-grey-text"
+                >Beer
                 <span class="badge badge-pill danger-color">NEW</span>
               </a>
             </strong>
@@ -163,8 +182,11 @@
       <div class="card align-items-center">
         <!-- Card image -->
         <div class="view overlay">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/61rcx9xOfaL._SL1200_.jpg" class="card-img-top"
-            alt="">
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/I/61rcx9xOfaL._SL1200_.jpg"
+            class="card-img-top"
+            alt=""
+          />
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -197,8 +219,11 @@
       <div class="card align-items-center">
         <!-- Card image -->
         <div class="view overlay">
-          <img src="https://lh3.googleusercontent.com/proxy/A7vg3JdbJS_tWXbatNx_kAFubMwd2jcDhmyWmGhOKHFrswWTECCXLGbcKEGcmpfnkktbqOIWa5KuRYBDDcvg-AM58hCVrOXOflMJtFnA1XAviO9CgfHmpF5K-o_Kw8rQ5L2ImUgVMZVK_eO1EDY" class="card-img-top"
-            alt="">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/A7vg3JdbJS_tWXbatNx_kAFubMwd2jcDhmyWmGhOKHFrswWTECCXLGbcKEGcmpfnkktbqOIWa5KuRYBDDcvg-AM58hCVrOXOflMJtFnA1XAviO9CgfHmpF5K-o_Kw8rQ5L2ImUgVMZVK_eO1EDY"
+            class="card-img-top"
+            alt=""
+          />
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -212,7 +237,8 @@
           </a>
           <h5>
             <strong>
-              <a href="" class="dark-grey-text">Grey blouse
+              <a href="" class="dark-grey-text"
+                >Grey blouse
                 <span class="badge badge-pill primary-color">BEST</span>
               </a>
             </strong>
@@ -233,8 +259,11 @@
       <div class="card align-items-center">
         <!-- Card image -->
         <div class="view overlay">
-          <img src="https://lh3.googleusercontent.com/proxy/KqYMSII7DZLdNU0WNgaTiV1mZwJmqvBuOQr07iydcrTaOg1nFUE9gjqhei2kIWCwAouA3vdlhLtGUUPxkTELIUZY68Nt7xtWCxM67HZhbZz0ULrG4Ucgd4_xXtuOMkdNR7e08iidSJuk5-0" class="card-img-top"
-            alt="">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/KqYMSII7DZLdNU0WNgaTiV1mZwJmqvBuOQr07iydcrTaOg1nFUE9gjqhei2kIWCwAouA3vdlhLtGUUPxkTELIUZY68Nt7xtWCxM67HZhbZz0ULrG4Ucgd4_xXtuOMkdNR7e08iidSJuk5-0"
+            class="card-img-top"
+            alt=""
+          />
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -260,33 +289,39 @@
       <!-- Card -->
     </div>
     <!-- Grid column -->
-
   </div>
   <!-- Grid row -->
-
 </section>
 <!-- Section: Products v.3 -->
 <!-- Email subscription form-->
 <section class="subscribe">
-	<div class="container">
-		<div class="row align-items-center subscribe02">
-			<div class="col-md-12">
-				<h2>Subscribe to Newsletter</h2>
-				<p class="text-big">For all the latest beers and blogs on irish craft beer subscribe to our page</p>
-			</div>
-            <div class="col-md-12">
-				<div class="form-holder">
-					<form action="." method="POST">
-						{% csrf_token %}
-						<div class="form-group">
-							<input type="email" name="email" id="email" placeholder="type your email address">
-							<button type="submit" class="submit">Signup</button>
-						</div>
-					</form>
-				</div>
+  <div class="container">
+    <div class="row align-items-center subscribe02">
+      <div class="col-md-12">
+        <h2>Subscribe to Newsletter</h2>
+        <p class="text-big">
+          For all the latest beers and blogs on irish craft beer subscribe to
+          our page
+        </p>
+      </div>
+      <div class="col-md-12">
+        <div class="form-holder">
+          <form action="." method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="type your email address"
+              />
+              <button type="submit" class="submit btn-primary">Signup</button>
             </div>
-		</div>
-	</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Email subscription form-->
 {% endblock %}

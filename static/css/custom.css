@@ -156,12 +156,10 @@ caption p {
 
 .jumbotron {
   background-color: transparent;
-}
-
-.jumbotron-header {
   color: white;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-top: 90px;
 }
 
 .jumbotron .lead {
@@ -204,6 +202,10 @@ caption p {
   color: #fff;
   background-color: #305151;
   border-color: #305151;
+}
+
+.btn-jumbo{
+    color: #fff;
 }
 
 .feature {

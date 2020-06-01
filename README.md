@@ -90,11 +90,10 @@ As per the requirements, before I can push my code to the Heroku app, I installe
 * A requirements.txt file is needed to run the installed dependencies, so to create and commit this file, the following command was used: $  pip3 freeze --local > requirements.txt (and also used to update the file if any libraries were added).
 * A Procfile is needed to direct the Heroku app to the file that it needs to run. So I used the command $ echo web: python > Procfile in the terminal to install the file. 
 * This was followed by a simple command in the terminal to run the web process: $ heroku ps:scale web=1.
+* Create an app on Heroku with a unique name for your app
+* In resources add a Postgres database – Hobby Dev and copy the URL for the new database to Config Vars
 * we need to migrate all excisting migrations to our new postgres databse and create a new superuser.
-*	Create an app on Heroku with a unique name for your app
-*	In resources add a Postgres database – Hobby Dev and copy the URL for the new database to Config Vars
-*	In settings tab add any secret environment variables to the Config Vars of those the secret values held in the env.py for Live Deployment.
-•	Creating an app on Heroku & deploying it from same.
+* In settings tab add any secret environment variables to the Config Vars of those the secret values held in the env.py for Live Deployment.
 •	Adding any secret environment variables to the Config Vars of Heroku App Settings tab and assigning those the secret values held in the env.py for Live Deployment.
 •	
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
