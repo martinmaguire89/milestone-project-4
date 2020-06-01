@@ -316,3 +316,10 @@ button, optgroup, select, textarea {
     max-height: 293px;
     width: 100%;
 }
+
+.card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #f5f3f3;
+}
