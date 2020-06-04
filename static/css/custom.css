@@ -198,7 +198,7 @@ caption p {
     color: #fff;
     background-color: #305151;
     line-height: 1.5;
-    font-weight: bold;
+    font-weight: initial;
     font-size: 1.5rem;
     border-radius: 7px;
 }
