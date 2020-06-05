@@ -8,6 +8,7 @@ body {
   text-align: center;
   background-color: #f8f9fa;
 }
+
 #container-fluid,
 .container-lg,
 .container-md,
@@ -21,14 +22,6 @@ body {
 footer {
   color: #305151;
   padding: 10px;
-}
-
-.icon-bar {
-  background-color: #fff;
-}
-
-.accountform {
-  padding-top: 20px;
 }
 
 .badge {
@@ -77,14 +70,6 @@ caption p {
   min-height: 40px;
 }
 
-.container-wrapper {
-}
-
-.container-wrapper--red {
-  background-color: #f05f40;
-  color: white;
-}
-
 .alert-container .col-12 {
   padding-left: 0;
   padding-right: 0;
@@ -113,34 +98,7 @@ caption p {
   margin-bottom: 0;
   border-bottom: 0;
   text-align: center;
-}
-
-.page-header h2 {
-  margin-top: 0;
-}
-.quotes .page-header {
-  margin-bottom: 25px;
-}
-
-/* blockdividers*/
-
-.block-divider {
-  width: 75px;
-  height: 5px;
-  border: 0;
-  background-color: #444;
-}
-
-.block-divider--orange {
-  background-color: #f05f40;
-}
-.block-divider--white {
-  background-color: white;
-}
-
-.block-divider--short {
-  width: 35px;
-}
+} 
 
 /*jumbotron*/
 
@@ -162,6 +120,7 @@ caption p {
   font-style: italic;
   color: #d0d0d0;
 }
+/*jumbotron*/
 
 /* buttons*/
 
@@ -213,27 +172,9 @@ button, optgroup, select, textarea {
     border-color: #305151;
 }
 
-.feature {
-  text-align: center;
-  margin-bottom: 40px;
-}
+/* buttons*/
 
-.feature i {
-  margin-bottom: 20px;
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.feature .btn {
-  background-color: white;
-  border-color: white;
-  border-radius: 15px;
-  min-width: 100px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #f05f40;
-}
-
+/* card*/
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -246,6 +187,20 @@ button, optgroup, select, textarea {
   background-clip: border-box;
   border: transparent;
 }
+
+.card-img-top{
+    max-height: 293px;
+    width: 100%;
+}
+
+.card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #f5f3f3;
+}
+
+/* card*/
 
 .h1,
 h1 {
@@ -315,16 +270,4 @@ a:hover {
 
 .categories{
   background-color: #f5f3f3;
-}
-
-.card-img-top{
-    max-height: 293px;
-    width: 100%;
-}
-
-.card-deck .card {
-    flex: 1 0 0%;
-    margin-right: 15px;
-    margin-left: 15px;
-    background-color: #f5f3f3;
 }
