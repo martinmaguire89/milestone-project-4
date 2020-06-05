@@ -203,6 +203,16 @@ caption p {
     border-radius: 7px;
 }
 
+button, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: whitesmoke;
+    background-color: #305151;
+    border-color: #305151;
+}
+
 .feature {
   text-align: center;
   margin-bottom: 40px;
@@ -288,13 +298,6 @@ a:hover {
   background-position: center;
 }
 
-button, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: #305151;
-}
 
 .alert {
     position: relative;
