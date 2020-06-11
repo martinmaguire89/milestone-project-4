@@ -7,7 +7,8 @@ It can be viewed on heroku [One For The Road]()
 
 ## UX
 ### Who is the target audience?
-*	 
+
+* The target audience is craft beer enthusiast who would like somewhere where they can get a wide range of beers from across the country.  The Blog page  targets people who are interested in craft beer but would like to learn more about different type of craft beers and good a compliments. Finally its ease of use will appeal to partners of craft beer drinker who will find it easy to buy craft beers for their significant other.  
 
 
 ### How does this attract our target audience?
@@ -40,6 +41,7 @@ It can be viewed on heroku [One For The Road]()
 *  [PostgresSQL](https://www.postgresql.org/)- backend database used to store the information on the products
 *  [Python](https://www.python.org/)- 
 *  [Heroku](https://dashboard.heroku.com/auth/heroku/callback?code=61fc81a2-ba86-42ec-ac96-a904a0153b77)- A cloud platform as a service enabling deployment for this CRUD application.
+*   [Stripe](https://stripe.com/gb)-  An API that allows individuals and businesses to make and receive payments over the Internet.
 
 
 ## Features
