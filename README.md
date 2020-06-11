@@ -12,7 +12,7 @@ It can be viewed on heroku [One For The Road]()
 
 
 ### How does this attract our target audience?
-*  
+*  The initial page starts with a large image of a pint of beer to capture the image of a tasty thirst-quenching beer.  The green colour stirs up images of Ireland and relaxing with a craft beer.  The easy layout supports the users need and makes their experience even better so they come back again. The quotes from previous users of the site help the claimant know this is a good site to use and use again.
 
 
 ## User Stories
@@ -20,7 +20,7 @@ It can be viewed on heroku [One For The Road]()
 *	As a user, I want it to be easy to navigate
 *	As a user, I want it to be easy to register if i need to.
 * As a user, I want it easy to browse different beers
-*	As a user, I want it to be easy for me to pay for any products
+*	As a user, I want it to be easy for me to add any items i want to a basket and  pay for any products
 
 
 ## Wireframe
