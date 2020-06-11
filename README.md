@@ -16,12 +16,11 @@ It can be viewed on heroku [One For The Road]()
 
 
 ## User Stories
-*	As a user, I want 
-*	As a user, I want it
-*	As a user, I want to
-* As a User, I want to 
-*	As a User, I want to
-* As a User, I want to  
+*	As a user, I want the initial page to be eye catching
+*	As a user, I want it to be easy to navigate
+*	As a user, I want it to be easy to register if i need to.
+* As a User, I want it easy to browse different beers
+*	As a User, I want it to be easy for me to pay for any products
 
 
 ## Wireframe
