@@ -172,6 +172,10 @@ button, optgroup, select, textarea {
     border-color: #305151;
 }
 
+#myBtnContainer {
+    margin-top: 25px;
+}
+
 /* buttons*/
 
 /* card*/

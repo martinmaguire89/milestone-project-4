@@ -1,3 +1,4 @@
+//stripe added to allow cutomers to make payments and details of purchases to be stored on stripe for business owner//
 $(function() {
     $("#payment-form").submit(function() {
         var form = this;
