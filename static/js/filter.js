@@ -1,4 +1,4 @@
-// filter added so customer can filter prodcuts page"
+ // filter added so customer can filter prodcuts page//
 $(document).ready(function(){
     $(".btn-success").click(function(){
         var name = $(this).attr("data-filter");
