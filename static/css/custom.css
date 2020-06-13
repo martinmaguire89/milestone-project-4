@@ -277,3 +277,9 @@ a:hover {
 .carousel-indicators li.active {
     background: #305151;
 }
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 50%;
+}
