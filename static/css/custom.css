@@ -261,13 +261,6 @@ a:hover {
   padding: 40px;
 }
 
-.bg-image {
-  background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
-  background-size: cover;
-  background-position: center;
-}
-
-
 .alert {
     position: relative;
     padding: .75rem 1.25rem;
@@ -303,4 +296,22 @@ img {
   img.img-thumbnail {
     display: none;
   }
+}
+
+.bg-image {
+  background: url("../img/beer-the-bottle.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 2.25rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
 }

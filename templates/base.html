@@ -18,78 +18,81 @@
     {% block head_js %}
     {% endblock head_js %}
 </head>
+
 <body>
- 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-	<!--  Show this only on mobile to medium screens  -->
-	<a class="navbar-brand d-lg-none" href="{% url 'index' %}">One For The Road</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+		<!--  Show this only on mobile to medium screens  -->
+		<a class="navbar-brand d-lg-none" href="{% url 'index' %}">One For The Road</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-	<!--  Use flexbox utility classes to change how the child elements are justified  -->
-	<div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+		<!--  Use flexbox utility classes to change how the child elements are justified  -->
+		<div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
 
-		<ul class="navbar-nav">
-			<div class="display">
-				<form action="{% url 'search' %}" method="get">
-					<input type="text" name="q">
-					<button type="search">Search</button>
-				</form>
-			</div>
-		</ul>
-
-
-		<!--   Show this only lg screens and up   -->
-		<a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}"><h1>One For The Road</h1></a>
-
-
-		<!--   if statement used ot only show certain pages if the user is logged in   -->
-		<ul class="navbar-nav">
-			<ul class="nav navbar-nav navbar-right">
-				{% if user.is_authenticated %}
-                <li><a href="{% url 'products' %}">Beers</a></li>
-				<li><a href="{% url 'logout' %}">Log Out</a></li>
-				<li><a href="{% url 'get_posts' %}">Blog</a></li>
-				{%  else %}
-                <li><a href="{% url 'products' %}">Beers</a></li>
-				<li><a href="{% url 'register' %}">Register</a></li>
-				<li><a href="{% url 'login' %}">Log In</a></li>
-				{% endif %}
-				<li>
-					<a href="{% url 'view_cart' %}">
-						<i class="fas fa-shopping-cart"></i>Cart
-						{% if product_count > 0 %}
-						<label class="badge badge-warning">{{ product_count }}</label>
-						{% endif %}
-					</a>
-				</li>
+			<ul class="navbar-nav">
+				<div class="display">
+					<form action="{% url 'search' %}" method="get">
+						<input type="text" name="q">
+						<button type="search">Search</button>
+					</form>
+				</div>
 			</ul>
 
-		</ul>
+
+			<!--   Show this only lg screens and up   -->
+			<a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">
+				<h1>One For The Road</h1>
+			</a>
+
+
+			<!--   if statement used ot only show certain pages if the user is logged in   -->
+			<ul class="navbar-nav">
+				<ul class="nav navbar-nav navbar-right">
+					{% if user.is_authenticated %}
+					<li><a href="{% url 'products' %}">Beers</a></li>
+					<li><a href="{% url 'logout' %}">Log Out</a></li>
+					<li><a href="{% url 'get_posts' %}">Blog</a></li>
+					{%  else %}
+					<li><a href="{% url 'products' %}">Beers</a></li>
+					<li><a href="{% url 'register' %}">Register</a></li>
+					<li><a href="{% url 'login' %}">Log In</a></li>
+					{% endif %}
+					<li>
+						<a href="{% url 'view_cart' %}">
+							<i class="fas fa-shopping-cart"></i>Cart
+							{% if product_count > 0 %}
+							<label class="badge badge-warning">{{ product_count }}</label>
+							{% endif %}
+						</a>
+					</li>
+				</ul>
+
+			</ul>
+		</div>
+	</nav>
+
+	{% if messages %}
+	<div class="alert alert-success">
+		<div class="messages">
+			{% for message in messages %}
+			{{ message }}
+			{% endfor %}
+		</div>
 	</div>
-</nav>
-
-{% if messages %}
-<div class="alert alert-success">
-	<div class="messages">
-		{% for message in messages %}
-		{{ message }}
-		{% endfor %}
-	</div>
-</div>
-{% endif %}
+	{% endif %}
 
 
-{% block content %} {% endblock %}
+	{% block content %} {% endblock %}
 
 
-<!-- Footer -->
-<footer class="footer">
+	<!-- Footer -->
+	<footer class="footer">
 
-	<!-- Footer Elements -->
+		<!-- Footer Elements -->
 
 		<!-- Grid row-->
 		<div class="row">
@@ -122,18 +125,17 @@
 		<!-- Grid row-->
 
 
-	<!-- Footer Elements -->
+		<!-- Footer Elements -->
 
-	<!-- Copyright -->
-	<div class="footer-copyright text-center">© 2020 Copyright:
-		<p>Martin Maguire</p>
-	</div>
-	<!-- Copyright -->
+		<!-- Copyright -->
+		<div class="footer-copyright text-center">© 2020 Copyright:
+			<p>Martin Maguire</p>
+		</div>
+		<!-- Copyright -->
 
-</footer>
-<!-- Footer -->
-<!-- jQuery & popper.js for interactive elements from Bootstrap -->
-
+	</footer>
+	<!-- Footer -->
+	<!-- jQuery & popper.js for interactive elements from Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="{% static 'js/filter.js' %}"></script>
