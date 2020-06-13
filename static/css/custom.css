@@ -283,3 +283,9 @@ img {
     border-style: none;
     max-width: 50%;
 }
+
+@media (max-width:629px) {
+  img.img-thumbnail {
+    display: none;
+  }
+}
