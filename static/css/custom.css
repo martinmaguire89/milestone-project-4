@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
   font-family: Arial;
   padding-top: 56px;
@@ -27,8 +34,6 @@ footer {
 .badge {
   padding-left: 9px;
   padding-right: 9px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
   border-radius: 9px;
 }
 
@@ -51,8 +56,11 @@ caption p {
 }
 
 .row.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -76,12 +84,12 @@ caption p {
 }
 
 .masthead {
-  height: 100vh;
   min-height: 500px;
   background: url("../img/bar-beer-dark-drink.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .container {
@@ -182,9 +190,12 @@ button, optgroup, select, textarea {
 .card {
   position: relative;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: transparent;
@@ -198,7 +209,9 @@ button, optgroup, select, textarea {
 }
 
 .card-deck .card {
-    flex: 1 0 0%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
     margin-right: 15px;
     margin-left: 15px;
     background-color: transparent;
@@ -240,6 +253,7 @@ a:hover {
 
 .subscribe02 {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -282,6 +296,7 @@ img {
     vertical-align: middle;
     border-style: none;
     max-width: 50%;
+    height:300px;
 }
 
 @media (max-width:629px) {

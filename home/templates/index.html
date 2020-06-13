@@ -1,10 +1,9 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block content %}
 <!-- Full Page Image Header with Vertically Centered Content -->
 
-<div class="container-fluid masthead h-100" id="container-fluid">
+<div class="container-fluid masthead" id="container-fluid">
 	<div class="row h-100 align-items-center">
 		<div class="col-12 text-center">
-			<h1 class="font-weight-light"></h1>
 			<p class="lead"></p>
 		</div>
 	</div>
@@ -26,111 +25,107 @@
 
 <!-- Section: Products-->
 <section class="categories">
-  <div class="container">
-   <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-5">
-    Our new releases!
-  </h2>
-  <!-- Section description -->
-  <p class="grey-text text-center w-responsive mx-auto mb-5">
-    These are just some of the finest ales, stouts and lagers we have sourced for all over the land! 
-    click on the link below to take you to these new releases and many more beers. Sure you’ll have one for the road?
-  </p>
-    <!-- Card deck -->
-    <div class="card-deck">
-      <!-- Card -->
-      <div class="card mb-4">
-        <!--Card image-->
-        <div class="view overlay" style="height:300px">
-          <img
+	<div class="container">
+		<!-- Section heading -->
+		<h2 class="h1-responsive font-weight-bold text-center my-5">
+			Our new releases!
+		</h2>
+		<!-- Section description -->
+		<p class="grey-text text-center w-responsive mx-auto mb-5">
+			These are just some of the finest ales, stouts and lagers we have sourced for all over the land!
+			Click on the link below to take you to these new releases and many more beers. Sure you’ll have one for the
+			road?
+		</p>
+		<!-- Card deck -->
+		<div class="card-deck">
+			<!-- Card -->
+			<div class="card mb-4">
+				<!--Card image-->
+				<div class="view overlay" style="height:300px">
+					<img
             class="mr-3"
-            width="100%"
             height="300"
             src="https://cdn.shopify.com/s/files/1/0286/4636/products/BuckItBottle_360x.png?v=1571438563"
             alt="Card image cap"
           />
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
+					<a href="#!">
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
 
-        <!--Card content-->
-        <div class="card-body">
-          <!--Title-->
-          <h4 class="card-title">Black Donkey "Buck It"</h4>
-          <!--Text-->
-          <p class="card-text">
-            Hybrid Amber Ale 500ml
-          </p>
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-          <a href="{% url 'products' %}" class="btn-success" role="button" aria-pressed="true">Beers</a>
-        </div>
-      </div>
-      <!-- Card -->
+				<!--Card content-->
+				<div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">Black Donkey "Buck It"</h4>
+					<!--Text-->
+					<p class="card-text">
+						Hybrid Amber Ale 500ml
+					</p>
+					<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+					<a href="{% url 'products' %}" class="btn-success" role="button" aria-pressed="true">Beers</a>
+				</div>
+			</div>
+			<!-- Card -->
 
-      <!-- Card -->
-      <div class="card mb-4">
-        <!--Card image-->
-        <div class="view overlay" style="height:300px">
-          <img
+			<!-- Card -->
+			<div class="card mb-4">
+				<!--Card image-->
+				<div class="view overlay" style="height:300px">
+					<img
             class="mr-3"
-            width="100%"
-            height="300"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRggA3KHsagtaxtln86ZYiSft-mAnZJ0mR0J3cdk_Rh3_pfjmju&usqp=CAU"
             alt="Card image cap"
           />
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
+					<a href="#!">
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
 
-        <!--Card content-->
-        <div class="card-body">
-          <!--Title-->
-          <h4 class="card-title">Lough Gill Andersons</h4>
-          <!--Text-->
-          <p class="card-text">
-            Irish Red Ale 440ml Can
-          </p>
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-          <a href="{% url 'products' %}" class="btn-success" role="button" aria-pressed="true">beers</a>
-        </div>
-      </div>
-      <!-- Card -->
+				<!--Card content-->
+				<div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">Lough Gill Andersons</h4>
+					<!--Text-->
+					<p class="card-text">
+						Irish Red Ale 440ml Can
+					</p>
+					<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+					<a href="{% url 'products' %}" class="btn-success" role="button" aria-pressed="true">beers</a>
+				</div>
+			</div>
+			<!-- Card -->
 
-      <!-- Card -->
-      <div class="card mb-4">
-        <!--Card image-->
-        <div class="view overlay" style="height:300px">
-          <img
+			<!-- Card -->
+			<div class="card mb-4">
+				<!--Card image-->
+				<div class="view overlay" style="height:300px">
+					<img
             class="mr-3"
-            width="100%"
-            height="300"
             src="https://cdn.shopify.com/s/files/1/0286/4636/products/irish_beer_collection_1_360x.jpg?v=1571438545"
             alt="Card image cap"
           />
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
+					<a href="#!">
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
 
-        <!--Card content-->
-        <div class="card-body">
-          <!--Title-->
-          <h4 class="card-title">Large Irish Craft Beer Box</h4>
-          <!--Text-->
-          <p class="card-text">
-            Assortment of Irish craft beers 
-          </p>
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-          <a href="{% url 'products' %}" class="btn-success" role="button" aria-pressed="true">beers</a>
-        </div>
-      </div>
-      <!-- Card -->
-    </div>
-  </div>
+				<!--Card content-->
+				<div class="card-body">
+					<!--Title-->
+					<h4 class="card-title">Large Irish Craft Beer Box</h4>
+					<!--Text-->
+					<p class="card-text">
+						Assortment of Irish craft beers
+					</p>
+					<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+					<a href="{% url 'products' %}" class="btn-success" role="button" aria-pressed="true">beers</a>
+				</div>
+			</div>
+			<!-- Card -->
+		</div>
+	</div>
 </section>
-  <!-- Card deck -->
+<!-- Card deck -->
 <section class="text-center my-5">
 	<div class="row">
 		<div class="col-lg-10 col-xl-8 mx-auto">
@@ -153,9 +148,11 @@
 								<div class="media-body ml-3">
 									<blockquote class="blockquote border-0 p-0">
 										<p class="font-italic lead">
-											<i class="fa fa-quote-left mr-3 text-success"></i>The website has so much choice 
-                                            which is great for a craft beer snob like me. Great products and delivery was quick. </p>
-										<footer class="blockquote-footer">James Collins 
+											<i class="fa fa-quote-left mr-3 text-success"></i>The website has so much
+											choice
+											which is great for a craft beer snob like me. Great products and delivery
+											was quick. </p>
+										<footer class="blockquote-footer">James Collins
 											<cite title="Source Title">from Randalstown</cite>
 										</footer>
 									</blockquote>
@@ -169,9 +166,11 @@
 								<div class="media-body ml-3">
 									<blockquote class="blockquote border-0 p-0">
 										<p class="font-italic lead">
-											<i class="fa fa-quote-left mr-3 text-success"></i>Great beers and even better
-                                            prices. The blog also helps me find a few hidden gems to drink at on my travels round the island
-                                            </p>
+											<i class="fa fa-quote-left mr-3 text-success"></i>Great beers and even
+											better
+											prices. The blog also helps me find a few hidden gems to drink at on my
+											travels round the island
+										</p>
 										<footer class="blockquote-footer">Sean Graham
 											<cite title="Source Title">from Toome</cite>
 										</footer>
@@ -186,9 +185,11 @@
 								<div class="media-body ml-3">
 									<blockquote class="blockquote border-0 p-0">
 										<p class="font-italic lead">
-											<i class="fa fa-quote-left mr-3 text-success"></i>I got my amazing husband some 
-                                            of these great beers for his birthday. 
-                                            The ease of the webpage made it super quick and easy to order.  Great delivery too</p>
+											<i class="fa fa-quote-left mr-3 text-success"></i>I got my amazing husband
+											some
+											of these great beers for his birthday.
+											The ease of the webpage made it super quick and easy to order. Great
+											delivery too</p>
 										<footer class="blockquote-footer">Cathy Maguire
 											<cite title="Source Title">from crosskeys</cite>
 										</footer>
