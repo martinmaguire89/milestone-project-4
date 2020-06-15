@@ -9,11 +9,16 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 ## UX
 ### Who is the target audience?
 
-* The target audience is craft beer enthusiast who would like somewhere where they can get a wide range of beers from across the country.  The Blog page  targets people who are interested in craft beer but would like to learn more about different type of craft beers and good a compliments. Finally its ease of use will appeal to partners of craft beer drinker who will find it easy to buy craft beers for their significant other.  
+* The target audience is craft beer enthusiast who would like somewhere where they can get a wide range of beers from across the country.  
+  The Blog page  targets people who are interested in craft beer but would like to learn more about different type of craft beers and good a compliments. 
+  Finally its ease of use will appeal to partners of craft beer drinker who will find it easy to buy craft beers for their significant other.  
 
 
 ### How does this attract our target audience?
-*  The initial page starts with a large image of a pint of beer to capture the image of a tasty thirst-quenching beer.  The green colour stirs up images of Ireland and relaxing with a craft beer.  The easy layout supports the users need and makes their experience even better so they come back again. The quotes from previous users of the site help the claimant know this is a good site to use and use again.
+*  The initial page starts with a large image of a pint of beer to capture the image of a tasty thirst-quenching beer.  
+   The green colour stirs up images of Ireland and relaxing with a craft beer.  
+   The easy layout supports the users need and makes their experience even better so they come back again. 
+   The quotes from previous users of the site help the claimant know this is a good site to use and use again.
 
 
 ## User Stories
@@ -46,36 +51,86 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 
 
 ## Features
-### Feature 1 –  .
+### Feature 1 –  Large Picture.
 
-### Feature 2 – .
+The large picture is designed to look pleasing on the eye the minute you log on the webpage. 
+The large image show’s instantly what the webpage is about and what it offers.  
+The single pint touches on the name of the page and allows people to remissness of the last pint before home time. 
+In the middle of the picture is a quick link to registration making it easier for a customer to register.
+
+### Feature 2 – Search Bar.
+
+The search bar is linked to the names of all products making it easy for new and return customers to search straight away for one direct produce. 
+This will streamline there experience if they are only instated in certain products. 
+
+### Feature 3 – login/sign up.
+
+A page that inherits the navbar and footer from the base.html file, containing a small form group to capture and validate the user's username and password. 
+This page will also feature a small hyperlink so the user can register their details to login to the page. 
+As with the Login page, this page is very similar with the only slight changes to the language used.
 
 
-### Feature 3 –  .
+### Feature 4 – beers.
+
+The beers page takes the customers to all available products we have in the store available for them to try. 
+Although they’re are on one full page  at the top of the page there is extra button to break all products down into single beers, mixed cases and merchandise. 
 
 
-### Feature 4 – .
+### Feature 5 – Blog.
 
+The blog page is for people who register to the webpage and as such will on show when the customer is logged in.  
+The blog is something extra for the customer to find out more about the beers on offer and for craft beer enthusiast.  
 
-### Feature 5 – .
+### Feature 5 – Cart.
 
+The cart feature allows the customer to preview their purchase in the basket before they 
+go through to checkout and make any changes necessary to the products or quantity. 
+
+### Feature 6 – Quotes.
+
+The quotes from previous users of the site help the claimant know this is a good site to use and use again.
+
+### Feature 6 – subscribe.
+
+The subscribe feature allow customers to register for a monthly newsletter on offer, new types of beers and updates when a new blog is posted.
 
 
 ## Features Left to Implement
-* 
-* 
-*  
+
+* I would like to include a comments section on the blog posts to allow fans to leave comments and discuss their opinions on the matters.
+
+* I would like to a date and time stamp to every product then use further python so that when new products are added the will show on the main page as the newest new releases.  
+    Currently this has to be done manually. 
+
+*  A rating system so each customer can rate their favourite beers, this will also show off the more popular ones.
+
+*  I would like to add in social media link to show anyone who motions our products or using our service.
 
 ## Testing
 * Used Google Chrome developer tools to test website responsiveness across multiple devices such as Tablets, Mobiles and laptop. This allowed me to see any issue's with sizing in different version control.
-*  I used different web browsers such as Microsoft edge and Firefox to test how my page would run on different web browsers. I then used each responsive tool in each browser to again test my version control to see if it would still work effectively or if I would encounter any problems. 
+* I used different web browsers such as Microsoft edge and Firefox to test how my page would run on different web browsers. I then used each responsive tool in each browser to again test my version control to see if it would still work effectively or if I would encounter any problems. 
 * Used [W3c validator](https://validator.w3.org/) to validate both HTML and CSS. I copied my code and pasted it into the validator to check for errors and warnings.
 * I used [cssautoprefixer](https://autoprefixer.github.io/) to help get the appropriate vendor prefixes needed for my code to work in all browsers.
 * Used [W3c validator](https://validator.w3.org/) to validate both HTML and CSS. I copied my code and pasted it into the validator to check for errors and warnings.
-*  I used [codebeautify](https://codebeautify.org/python-formatter-beautifier) to help with the correct Indentation of my python code
+* I used [codebeautify](https://codebeautify.org/python-formatter-beautifier) to help with the correct Indentation of my python code]
+* 
 
 ## Issues when Testing
-*
+
+*  When testing the home page would have a white line down the right side of the page. this continue on smaller screens as well. 
+   This was due to minus margins on the row in the footer section.  
+   To fix this I set the margins to zero in the CSS. This fixed the problem.
+
+*  On small screens the buttons in the beers page would be overlapping each other. 
+   To fix this I added a margin around each button of 5px to give them room on smaller screens. 
+  
+*  Used Google Chrome developer tools to test website responsiveness across multiple devices such as Tablets, Mobiles and laptop. 
+   This allowed me to see any issue's with sizing in different version control.
+
+*   When updating the new releases some image would stretch as the pixels where so high. 
+    To fix this I set the max-width to 50% so no images would go over this size. 
+    This seems to have worked and all images look the same size and resolution on all screen sizes. 
+
 ## Deployment
 
 This full stack application was developed using github and version controlled via local (git) pushes.
@@ -115,8 +170,11 @@ If you wish to clone this project from GitHub:
 
 
 ## Credits
-* Credit goes to the tutos for there hlep wiht my log in problems and my mentor rahul for everything.
+* Credit goes to Rahul Lakhanpal my mentor for all his help on this project and for everything he has done for me over the entirety of the course. 
+  I couldn’t of done it without him.
+
 ### Content
+
 *
 
 ### Media
