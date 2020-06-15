@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/martinmaguire89/milestone-project-4.svg?branch=master)](https://travis-ci.com/martinmaguire89/milestone-project-4)
 # Milestone-project-4
 # One For The Road
 
