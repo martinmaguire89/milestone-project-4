@@ -83,8 +83,7 @@ The blog is something extra for the customer to find out more about the beers on
 
 ### Feature 5 – Cart.
 
-The cart feature allows the customer to preview their purchase in the basket before they 
-go through to checkout and make any changes necessary to the products or quantity. 
+The cart feature allows the customer to preview their purchase in the basket before they go through checkout and make any changes necessary to the products or quantity. 
 
 ### Feature 6 – Quotes.
 
@@ -112,8 +111,9 @@ The subscribe feature allow customers to register for a monthly newsletter on of
 * Used [W3c validator](https://validator.w3.org/) to validate both HTML and CSS. I copied my code and pasted it into the validator to check for errors and warnings.
 * I used [cssautoprefixer](https://autoprefixer.github.io/) to help get the appropriate vendor prefixes needed for my code to work in all browsers.
 * Used [W3c validator](https://validator.w3.org/) to validate both HTML and CSS. I copied my code and pasted it into the validator to check for errors and warnings.
-* I used [codebeautify](https://codebeautify.org/python-formatter-beautifier) to help with the correct Indentation of my python code]
-* 
+* I used [codebeautify](https://codebeautify.org/python-formatter-beautifier) to help with the correct Indentation of my python code
+
+* I used Travis-CI test my project hosted at GitHub. Travis CI automatically detects when a commit has been made and pushed to a GitHub   repository that is using Travis CI, and each time this happens, it will try to build the project and run tests.
 
 ## Issues when Testing
 
@@ -152,9 +152,9 @@ As per the requirements, before I can push my code to the Heroku app, I installe
 * In resources add a Postgres database – Hobby Dev and copy the URL for the new database to Config Vars
 * we need to migrate all excisting migrations to our new postgres databse and create a new superuser.
 * In settings tab add any secret environment variables to the Config Vars of those the secret values held in the env.py for Live Deployment.
-•	Adding any secret environment variables to the Config Vars of Heroku App Settings tab and assigning those the secret values held in the env.py for Live Deployment.
-•	
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+*	Adding any secret environment variables to the Config Vars of Heroku App Settings tab and assigning those the secret values held in the env.py for Live Deployment.
+*	In the deploy area select “GitHub” as the deployment method. Search for you project from GitHub and select the correct one.
+* I then use the deploy branch to run my project on Heroku and enable automatic deploys so all changes update when a git push it actioned. 
 
 
 If you wish to clone this project from GitHub:
@@ -175,7 +175,9 @@ If you wish to clone this project from GitHub:
 
 ### Content
 
-*
+* The carousal review was taken from a snippets page on bootstrapious and tailored to fit my own needs.
+
+* The images and products where taken form an assortment of different draft beer websites found on google. 
 
 ### Media
 
