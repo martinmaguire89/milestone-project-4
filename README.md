@@ -10,23 +10,18 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 
 ## Table of Contents:
 * [Who is the target audience?](#Who-is-the-target-audience)
-* [Functionality of Project](#functionality-of-project)
-* [User Experience](#user-experience)
+* [How does this attract our target audience?](#How-does-this-attract-our-target-audience)
     * [User Stories](#user-stories)
     * [Design](#design)
-        * [1. Font](#1-font)
-        * [2. Color Scheme](#2-color-scheme)
-        * [3. Logo](#3-logo)
-        * [4. Geometry](#4-geometry)
-        * [5. Wireframing](#5-wireframing)
-* [Technology Used](#technology-used)
+     *[Wireframe] (#wireframe)
+* [Technologies Used](#technologies-used)
 * [Features](#features)
-    * [Future Features](#future-features)
+    * [Features Left to Implement](#Features-Left-to-Implement)
 * [Testing](#testing)
-    * [Defensive Design](#defensive-design)
+* [Issues-with-testing](#issues-with-testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
-    * [Special Thanks & Acknowledgements](#special-thanks--acknowledgements)
+  
 
 ***
 
@@ -53,6 +48,7 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 *   As a user, I want it easy to browse different beers
 *	As a user, I want it to be easy for me to add any items i want to a basket and  pay for any products
 
+[Back to top](#table-of-contents)
 
 ## Wireframe
 * Link to my [balsamiq wireframe](https://github.com/martinmaguire89/milestone-project-4/blob/master/milestone%20project-4.pdf)
@@ -74,6 +70,7 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 *  [Heroku](https://dashboard.heroku.com/auth/heroku/callback?code=61fc81a2-ba86-42ec-ac96-a904a0153b77)- A cloud platform as a service enabling deployment for this CRUD application.
 *  [Stripe](https://stripe.com/gb)-  An API that allows individuals and businesses to make and receive payments over the Internet.
 
+[Back to top](#table-of-contents)
 
 ## Features
 ### Feature 1 –  Large Picture.
@@ -130,6 +127,8 @@ The subscribe feature allow customers to register for a monthly newsletter on of
 
 *  I would like to add in social media link to show anyone who motions our products or using our service.
 
+[Back to top](#table-of-contents)
+
 ## Testing
 * Used Google Chrome developer tools to test website responsiveness across multiple devices such as Tablets, Mobiles and laptop. This allowed me to see any issue's with sizing in different version control.
 * I used different web browsers such as Microsoft edge and Firefox to test how my page would run on different web browsers. I then used each responsive tool in each browser to again test my version control to see if it would still work effectively or if I would encounter any problems. 
@@ -155,6 +154,8 @@ The subscribe feature allow customers to register for a monthly newsletter on of
 *   When updating the new releases some image would stretch as the pixels where so high. 
     To fix this I set the max-width to 50% so no images would go over this size. 
     This seems to have worked and all images look the same size and resolution on all screen sizes. 
+    
+  [Back to top](#table-of-contents)
 
 ## Deployment
 
@@ -192,7 +193,7 @@ If you wish to clone this project from GitHub:
 *	Press Enter to create your local clone.
 *	Once open create an env.py file and assign the Database URL, Secret Key, Stripe Publishable & Stripe Secret, and finally Emailing variables. Ensure the env.py is living in the root of your project directory and then add it to .gitignore so now of this is exposed once you commit your code.
 
-
+[Back to top](#table-of-contents)
 
 ## Credits
 * Credit goes to Rahul Lakhanpal my mentor for all his help on this project and for everything he has done for me over the entirety of the course. 
@@ -206,3 +207,4 @@ If you wish to clone this project from GitHub:
 
 ### Media
 
+[Back to top](#table-of-contents)
