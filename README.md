@@ -9,7 +9,7 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 ***
 
 ## Table of Contents:
-* [Who is the target audience?](#Who is the target audience)
+* [Who is the target audience?](#Who-is-the-target-audience)
 * [Functionality of Project](#functionality-of-project)
 * [User Experience](#user-experience)
     * [User Stories](#user-stories)
