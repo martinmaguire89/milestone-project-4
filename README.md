@@ -4,7 +4,7 @@
 
 My 4th milestone project is a full-stack site website based around business logic used to control a centrally-owned dataset. One for the road is a e-commerce webpage selling craft beer from all around the country. The reason for this idea was due to me looking for a place to buy a variety of different craft beers from around Ireland. This website allows users to look at many different beers from all the different counties and have them deliver straight to there door. There is also the added bonus for customers once they have registered, they can enjoy a regular updated blog of new crafts beers around the island and best places to visit for the very best craft beer.  Valuable information for the serious craft beer enthusiast. 
 
-It can be viewed on heroku [One For The Road]()
+It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.herokuapp.com/)
 
 ## UX
 ### Who is the target audience?
@@ -20,17 +20,18 @@ It can be viewed on heroku [One For The Road]()
 *	As a user, I want the initial page to be eye catching
 *	As a user, I want it to be easy to navigate
 *	As a user, I want it to be easy to register if i need to.
-* As a user, I want it easy to browse different beers
+*   As a user, I want it easy to browse different beers
 *	As a user, I want it to be easy for me to add any items i want to a basket and  pay for any products
 
 
 ## Wireframe
-* Link to my [balsamiq wireframe]()
+* Link to my [balsamiq wireframe](https://github.com/martinmaguire89/milestone-project-4/blob/master/milestone%20project-4.pdf)
 *	I decided to use Balsamiq to create my wireframe because it was recommended in the milestone project and by code institute mentors on slack.
 
 ## Technologies used
 *  Html
 *  CSS
+*  [Python](https://www.python.org/)
 *  [Google Fonts](https://fonts.google.com/) - Used to style the fonts of the website.
 *  [jQuery](https://jquery.com/) - To make certain features function on the page.
 *  [git](https://github.com/) - Used as a repository
@@ -38,10 +39,10 @@ It can be viewed on heroku [One For The Road]()
 *  [Bootstrap](https://www.bootstrapcdn.com/) - Bootstrap framework to create responsive design.
 *  [fontawesome](https://fontawesome.com/) - for social media icons.
 *  [Django](https://www.djangoproject.com/)- a Python-based free and open-source web framework that follows the model-template-view architectural pattern.
-*  [PostgresSQL](https://www.postgresql.org/)- backend database used to store the information on the products
-*  [Python](https://www.python.org/)- 
+*  [PostgresSQL](https://www.postgresql.org/) - backend database used to store the information on the products
+*  [Travis-CI](https://travis-ci.org/getting_started) - Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub and Bitbucket
 *  [Heroku](https://dashboard.heroku.com/auth/heroku/callback?code=61fc81a2-ba86-42ec-ac96-a904a0153b77)- A cloud platform as a service enabling deployment for this CRUD application.
-*   [Stripe](https://stripe.com/gb)-  An API that allows individuals and businesses to make and receive payments over the Internet.
+*  [Stripe](https://stripe.com/gb)-  An API that allows individuals and businesses to make and receive payments over the Internet.
 
 
 ## Features
