@@ -13,7 +13,7 @@ It can be viewed on heroku [One For The Road](https://on-for-the-road-ms4.heroku
 * [How does this attract our target audience?](#How-does-this-attract-our-target-audience)
 * [User Stories](#user-stories)
 * [Design](#design)
-* [Wireframe] (#Wireframe)
+* [Wireframe](#Wireframe)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Features Left to Implement](#Features-Left-to-Implement)
